@@ -21,7 +21,7 @@ export default function Home() {
       <Manage />
       <FAQ />
       <Joinus />
-      <iframe src="https://youtube.com/embed/2aQ5GM1n9Qk?si=78KeyVCp8G0KFIh_"></iframe>
+      {/* <iframe src="https://youtube.com/embed/2aQ5GM1n9Qk?si=78KeyVCp8G0KFIh_"></iframe> */}
       <Insta />
     </main>
   );
