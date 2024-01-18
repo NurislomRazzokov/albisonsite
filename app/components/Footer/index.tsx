@@ -89,7 +89,7 @@ const footer = () => {
                 </Link>
                 <Link href="/honor">
                   <h3 className="text-offwhite pl-6 border-solid border-l border-footer">
-                    Sharaf Kodeksi
+                    Sharaf Kodeksii
                   </h3>
                 </Link>
               </div>
