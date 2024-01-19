@@ -2,42 +2,47 @@ import Slider, { Settings } from "react-slick";
 import Image from "next/image";
 import "./work.css";
 import Link from "next/link";
-
+import Furqat from "@/public/images/wework/furqat.webp";
+import Ibrohim from "@/public/images/wework/ibrohim.webp";
+import Zokir from "@/public/images/wework/zokir.webp";
+import Kamron from "@/public/images/wework/kamron.webp";
+import Dilshod from "@/public/images/wework/dilshod.webp";
+import Shuhrat from "@/public/images/wework/shuhrat.webp";
 const data = [
   {
     profession: "CEO",
     name: "Furqat  Teshaev",
-    imgSrc: "/images/wework/furqat.webp",
+    imgSrc: Furqat,
     in: "https://www.linkedin.com/in/furkat-teshaev-b16701199/",
   },
   {
     profession: "#developer",
     name: "Kamron Shodmonov",
-    imgSrc: "/images/wework/kamron.webp",
+    imgSrc: Kamron,
     in: "https://www.linkedin.com/in/kamronbekshodmonov/",
   },
   {
     profession: "#developer",
     name: "Ibrohim Fattohov",
-    imgSrc: "/images/wework/ibrohim.webp",
+    imgSrc: Ibrohim,
     in: "https://www.linkedin.com/in/ibrohim-fattohov/",
   },
   {
     profession: "#developer",
     name: "Shuhrat Ergashev",
-    imgSrc: "/images/wework/shuhrat.webp",
+    imgSrc: Shuhrat,
     in: "https://www.linkedin.com/in/shuhrat-ergashev-aa1771238/",
   },
   {
     profession: "#developer",
     name: "Dilshodbek Khodjakov",
-    imgSrc: "/images/wework/dilshod.webp",
+    imgSrc: Dilshod,
     in: "https://www.linkedin.com/in/dilshodbek-khodjakov/",
   },
   {
     profession: "#developer",
     name: "Zokirjon  Murotov",
-    imgSrc: "/images/wework/zokir.webp",
+    imgSrc: Zokir,
     in: "https://www.linkedin.com/in/zokirjon-murotov-2a5200239/",
   },
 ];
