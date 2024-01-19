@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   description:
     "Toshkentda professional IT treyning markazi | Albison - 2020 yildan beri o'z faoliyatini yurg'izib kelmoqda. IT Kurslar boshidan boshlab o'rgatiladi va ishga kirguncha qo’llab-quvvatlanadi. Online o'qish imkoniyati ham bor. Bepul ochiq darslar",
 };
+import GoogleAnalytics from "./components/GoogleAnalytics/GoogleAnalytics";
 
 export default function RootLayout({
   children,
@@ -26,6 +27,7 @@ export default function RootLayout({
         <Head>
           <link rel="icon" href="/logo.svg" />
           {/* Google Analytics tracking code */}
+<<<<<<< HEAD
           {/* <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-93WN9M8Y8G"
@@ -42,6 +44,9 @@ export default function RootLayout({
             `,
             }}
           ></script> */}
+=======
+          <GoogleAnalytics GA_MEASUREMENT_ID="G-0000000000" />
+>>>>>>> e4d399b52fa2961c57312a3801e779e1426051ec
         </Head>
         <body>
           <Navbar />
