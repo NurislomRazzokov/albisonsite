@@ -1,9 +1,12 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import VideoModal from "../Youtubemodal/VideoModal";
 import { useState } from "react";
-
+import Zamira from "@/public/images/insta/zamira.webp";
+import youtube from "@/public/images/footer/youtube.svg";
+import Malika from "@/public/images/insta/malika.webp";
+import Iroda from "@/public/images/insta/iroda.webp";
+import Sumbula from "@/public/images/insta/sunbula.webp";
 const Insta = () => {
   const [showone, setShowone] = useState(false);
   const [showtwo, setShowtwo] = useState(false);
@@ -17,7 +20,7 @@ const Insta = () => {
       <div className=" mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
         <div className="mx-auto imageContainer">
           <Image
-            src="/images/insta/zamira.webp"
+            src={Zamira}
             width={306}
             height={306}
             alt="instaOne"
@@ -32,19 +35,14 @@ const Insta = () => {
               }}
               onClick={() => setShowone(true)}
             >
-              <Image
-                src="/images/footer/youtube.svg"
-                alt="instagram"
-                width={36}
-                height={36}
-              />
+              <Image src={youtube} alt="instagram" width={36} height={36} />
             </button>
           </div>
         </div>
 
         <div className="mx-auto imageContainer">
           <Image
-            src="/images/insta/malika.webp"
+            src={Malika}
             width={306}
             height={306}
             alt="instaTwo"
@@ -59,19 +57,14 @@ const Insta = () => {
               }}
               onClick={() => setShowtwo(true)}
             >
-              <Image
-                src="/images/footer/youtube.svg"
-                alt="instagram"
-                width={36}
-                height={36}
-              />
+              <Image src={youtube} alt="instagram" width={36} height={36} />
             </button>
           </div>
         </div>
 
         <div className="mx-auto imageContainer">
           <Image
-            src="/images/insta/iroda.webp"
+            src={Iroda}
             width={306}
             height={306}
             alt="instaThree"
@@ -86,19 +79,14 @@ const Insta = () => {
               }}
               onClick={() => setShowtree(true)}
             >
-              <Image
-                src="/images/footer/youtube.svg"
-                alt="instagram"
-                width={36}
-                height={36}
-              />
+              <Image src={youtube} alt="instagram" width={36} height={36} />
             </button>
           </div>
         </div>
 
         <div className="mx-auto imageContainer">
           <Image
-            src="/images/insta/sunbula.webp"
+            src={Sumbula}
             width={306}
             height={306}
             alt="instaFour"
@@ -113,12 +101,7 @@ const Insta = () => {
               }}
               onClick={() => setShowfour(true)}
             >
-              <Image
-                src="/images/footer/youtube.svg"
-                alt="instagram"
-                width={36}
-                height={36}
-              />
+              <Image src={youtube} alt="instagram" width={36} height={36} />
             </button>
           </div>
         </div>

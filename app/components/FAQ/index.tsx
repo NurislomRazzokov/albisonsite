@@ -11,7 +11,7 @@ const FAQ = () => {
     >
       <h3 className="text-xl font-normal text-white text-center mb-6">KBS</h3>
       <h2 className="text-4xl lg:text-6xl font-semibold text-center text-white">
-        Ko'p beriladigan <br /> savollar
+        Ko`p beriladigan <br /> savollar
       </h2>
       <div className="w-full px-4 pt-16">
         {faqData?.map((faq, index) => (

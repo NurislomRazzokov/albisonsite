@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
-
+import dots from "@/public/images/aboutus/dots.svg";
 interface datatype {
   heading: string;
   imgSrc: string;
@@ -42,7 +42,7 @@ const Aboutus = () => {
     <div id="aboutus-section" className="overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 py-24 my-32 lg:px-10 bg-lightgrey rounded-3xl relative">
         <Image
-          src="/images/aboutus/dots.svg"
+          src={dots}
           width={100}
           height={100}
           alt="dots-image"

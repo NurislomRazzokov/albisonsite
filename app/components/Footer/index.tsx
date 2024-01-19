@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import "./foot.css";
-
+import youtube from "@/public/images/footer/youtube.svg";
+import telegram from "@/public/images/footer/telegram.svg";
+import instagram from "@/public/images/footer/instagram.svg";
+import linkedin from "@/public/images/footer/linkedin.svg";
+import phone from "@/public/images/footer/phone.svg";
 const footer = () => {
   return (
     <div className="bg-black -mt-40" id="first-section">
@@ -22,56 +26,31 @@ const footer = () => {
             href="https://youtube.com"
             target="_blank"
           >
-            <Image
-              src={"/images/footer/youtube.svg"}
-              alt="instagram"
-              width={35}
-              height={35}
-            />
+            <Image src={youtube} alt="instagram" width={35} height={35} />
           </Link>
           <Link
             className="footer-icons csicon"
             href="https://t.me/albisonuz"
             target="_blank"
           >
-            <Image
-              src={"/images/footer/telegram.svg"}
-              alt="twitter"
-              width={35}
-              height={35}
-            />
+            <Image src={telegram} alt="twitter" width={35} height={35} />
           </Link>
           <Link
             className="footer-icons csicon"
             href="https://instagram.com/albisonuz"
             target="_blank"
           >
-            <Image
-              src={"/images/footer/instagram.svg"}
-              alt="instagram"
-              width={35}
-              height={35}
-            />
+            <Image src={instagram} alt="instagram" width={35} height={35} />
           </Link>
           <Link
             className="footer-icons csicon"
             href="https://www.linkedin.com/company/albisonuz"
             target="_blank"
           >
-            <Image
-              src={"/images/footer/linkedin.svg"}
-              alt="instagram"
-              width={35}
-              height={35}
-            />
+            <Image src={linkedin} alt="instagram" width={35} height={35} />
           </Link>
           <a className="footer-icons csicon" href="tel:+998901122757">
-            <Image
-              src={"/images/footer/phone.svg"}
-              alt="phone"
-              width={35}
-              height={35}
-            />
+            <Image src={phone} alt="phone" width={35} height={35} />
           </a>
         </div>
 
@@ -80,7 +59,7 @@ const footer = () => {
             <div className="mt-4 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 xl:gap-x-8">
               <div>
                 <h3 className="text-center md:text-start text-offwhite text-lg">
-                  *Ma'lumotlar ochiq resurslarga asoslangan
+                  *Ma`lumotlar ochiq resurslarga asoslangan
                 </h3>
               </div>
               <div className="flex justify-center md:justify-end">

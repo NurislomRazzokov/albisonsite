@@ -1,5 +1,6 @@
 import Image from "next/image";
-
+import man from "@/public/images/team/ceo.png";
+import comma from "@/public/images/dedicated/comma.svg";
 const Dedicated = () => {
   return (
     <div className="relative overflow-hidden">
@@ -16,7 +17,7 @@ const Dedicated = () => {
           {/* COLUMN-1 */}
           <div>
             <Image
-              src="/images/team/ceo.png"
+              src={man}
               alt="man-icon"
               width={416}
               height={530}
@@ -27,18 +28,18 @@ const Dedicated = () => {
           {/* COLUMN-2 */}
           <div className="relative">
             <Image
-              src="images/dedicated/comma.svg"
+              src={comma}
               alt="comma-image"
               width={200}
               height={106}
               className="absolute comma-pos hidden lg:block"
             />
             <h2 className="text-4xl lg:text-65xl pt-4 font-bold sm:leading-tight mt-5 text-center lg:text-start">
-              IT hamjamiyat yorug' kelajagimiz poydevori
+              IT hamjamiyat yorug` kelajagimiz poydevori
             </h2>
             <p className="font-medium text-lightblack text-2xl mt-5 text-center lg:text-start">
-              Kuchli jamoamiz bo'lmaganida bunaqa qisqa vaqt ichida yirik
-              yutuqlarga erisha olmagan bo'lardik. Har bir bitiruvchimiz o'z
+              Kuchli jamoamiz bo`lmaganida bunaqa qisqa vaqt ichida yirik
+              yutuqlarga erisha olmagan bo`lardik. Har bir bitiruvchimiz o`z
               bilim va tajribalari bilan har doim beminnat ulashishga tayyorlar.
             </p>
             <p className="text-2xl font-semibold mt-12 lg:ml-32 preline text-center lg:text-start">

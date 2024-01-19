@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Switch } from "@headlessui/react";
 import Image from "next/image";
 import { Responsive } from "../Slider";
-
+import right from "@/public/images/manage/right.svg";
 const names = [
   {
     heading: "O’quv markazlar",
@@ -108,35 +108,20 @@ const Manage = () => {
     <div id="services-section">
       <div className="mx-auto max-w-7xl sm:py-20 lg:px-8 my-16">
         <h3 className="text-center text-4xl sm:text-65xl font-black">
-          To'g'ri tanlov o'z <br /> qo'lingizda
+          To`g`ri tanlov o`z <br /> qo`lingizda
         </h3>
 
         <div className="md:flex md:justify-around mt-20">
           <div className="flex gap-5 justify-center md:justify-start">
-            <Image
-              src="/images/manage/right.svg"
-              alt="right-icon"
-              width={21}
-              height={14}
-            />
+            <Image src={right} alt="right-icon" width={21} height={14} />
             <h4 className="text-lg font-semibold">3 oy intensiv kurs </h4>
           </div>
           <div className="flex gap-5 justify-center md:justify-start">
-            <Image
-              src="/images/manage/right.svg"
-              alt="right-icon"
-              width={21}
-              height={14}
-            />
+            <Image src={right} alt="right-icon" width={21} height={14} />
             <h4 className="text-lg font-semibold">Cheksiz imkoniyatlar </h4>
           </div>
           <div className="flex gap-5 justify-center md:justify-start">
-            <Image
-              src="/images/manage/right.svg"
-              alt="right-icon"
-              width={21}
-              height={14}
-            />
+            <Image src={right} alt="right-icon" width={21} height={14} />
             <h4 className="text-lg font-semibold">
               Ishlab berish majburiyatisiz
             </h4>

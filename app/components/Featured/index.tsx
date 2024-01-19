@@ -1,7 +1,5 @@
 "use client";
-import Slider from "react-slick";
 import React, { Component } from "react";
-import Image from "next/image";
 
 // CAROUSEL DATA
 
