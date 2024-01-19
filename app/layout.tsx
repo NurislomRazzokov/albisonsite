@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar/index";
 import Footer from "./components/Footer/index";
 import Head from "next/head";
 import type { Metadata } from "next";
+import GoogleAnalytics from "@/app/components/GoogleAnalytics";
+import CookieBanner from "@/app/components/CookieBanner";
 export const metadata: Metadata = {
   title: "Albison Academy",
   icons: {
@@ -20,10 +22,11 @@ export default function RootLayout({
   return (
     <>
       <html>
+        <GoogleAnalytics GA_MEASUREMENT_ID="G-93WN9M8Y8G" />
         <Head>
           <link rel="icon" href="/logo.svg" />
           {/* Google Analytics tracking code */}
-          <script
+          {/* <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-93WN9M8Y8G"
           ></script>
@@ -38,12 +41,13 @@ export default function RootLayout({
             gtag('config', 'G-9TKY3GHRS9');
             `,
             }}
-          ></script>
+          ></script> */}
         </Head>
         <body>
           <Navbar />
           {children}
           <Footer />
+          <CookieBanner />
         </body>
       </html>
     </>

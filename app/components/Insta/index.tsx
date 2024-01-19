@@ -1,7 +1,14 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import VideoModal from "../Youtubemodal/VideoModal";
+import { useState } from "react";
 
 const Insta = () => {
+  const [showone, setShowone] = useState(false);
+  const [showtwo, setShowtwo] = useState(false);
+  const [showtree, setShowtree] = useState(false);
+  const [showfour, setShowfour] = useState(false);
   return (
     <div
       id="result"
@@ -16,13 +23,14 @@ const Insta = () => {
             alt="instaOne"
             className="rounded-2xl"
           />
-          <Link href={"https://youtube.com/shorts/8hgvsfU7tsc"} target="_blank">
+          <div>
             <button
               className="hidden text-white font-semibold absolute z-10"
               style={{
                 top: "45%",
                 right: "45%",
               }}
+              onClick={() => setShowone(true)}
             >
               <Image
                 src="/images/footer/youtube.svg"
@@ -31,7 +39,7 @@ const Insta = () => {
                 height={36}
               />
             </button>
-          </Link>
+          </div>
         </div>
 
         <div className="mx-auto imageContainer">
@@ -42,13 +50,14 @@ const Insta = () => {
             alt="instaTwo"
             className="rounded-2xl"
           />
-          <Link href={"https://youtube.com/shorts/2aQ5GM1n9Qk"} target="_blank">
+          <div>
             <button
               className="hidden text-white font-semibold absolute z-10"
               style={{
                 top: "45%",
                 right: "45%",
               }}
+              onClick={() => setShowtwo(true)}
             >
               <Image
                 src="/images/footer/youtube.svg"
@@ -57,7 +66,7 @@ const Insta = () => {
                 height={36}
               />
             </button>
-          </Link>
+          </div>
         </div>
 
         <div className="mx-auto imageContainer">
@@ -68,16 +77,14 @@ const Insta = () => {
             alt="instaThree"
             className="rounded-2xl"
           />
-          <Link
-            href={"https://www.youtube.com/shorts/GinnkDF7w1A"}
-            target="_blank"
-          >
+          <div>
             <button
               className="hidden text-white font-semibold absolute z-10"
               style={{
                 top: "45%",
                 right: "45%",
               }}
+              onClick={() => setShowtree(true)}
             >
               <Image
                 src="/images/footer/youtube.svg"
@@ -86,7 +93,7 @@ const Insta = () => {
                 height={36}
               />
             </button>
-          </Link>
+          </div>
         </div>
 
         <div className="mx-auto imageContainer">
@@ -97,13 +104,14 @@ const Insta = () => {
             alt="instaFour"
             className="rounded-2xl"
           />
-          <Link href={"https://youtube.com/shorts/UpciodTd59I"} target="_blank">
+          <div>
             <button
               className="hidden text-white font-semibold absolute z-10"
               style={{
                 top: "45%",
                 right: "45%",
               }}
+              onClick={() => setShowfour(true)}
             >
               <Image
                 src="/images/footer/youtube.svg"
@@ -112,9 +120,29 @@ const Insta = () => {
                 height={36}
               />
             </button>
-          </Link>
+          </div>
         </div>
       </div>
+      <VideoModal
+        video={"https://youtube.com/embed/8hgvsfU7tsc?rel=1&showinfo=0"}
+        isVisible={showone}
+        onClose={() => setShowone(false)}
+      />
+      <VideoModal
+        video={"https://youtube.com/embed/2aQ5GM1n9Qk?rel=0&showinfo=0"}
+        isVisible={showtwo}
+        onClose={() => setShowtwo(false)}
+      />
+      <VideoModal
+        video={"https://www.youtube.com/embed/GinnkDF7w1A?rel=0&showinfo=0"}
+        isVisible={showtree}
+        onClose={() => setShowtree(false)}
+      />
+      <VideoModal
+        video={"https://youtube.com/embed/UpciodTd59I?rel=0&showinfo=0"}
+        isVisible={showfour}
+        onClose={() => setShowfour(false)}
+      />
     </div>
   );
 };
