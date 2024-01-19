@@ -10,7 +10,7 @@ const Join = () => {
           </h3>
           <h2 className="text-4xl sm:text-6xl font-bold my-6 leading-10">
             {" "}
-            Dasturchilar bilan dasturlashni <br /> oson o`rganing.
+            Dasturchilar bilan dasturlashni <br /> oson o'rganing.
           </h2>
           <p className="text-lightblack text-base font-normal">
             Dasturlashni o`rganib yuqori daromadli kasbga ega bo`lmoqchisiz 😎{" "}
