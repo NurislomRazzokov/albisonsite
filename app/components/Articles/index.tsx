@@ -1,70 +1,70 @@
 "use client";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import React, { Component } from "react";
-import Link from "next/link";
-import Image from "next/image";
+// import Link from "next/link";
+// import Image from "next/image";
 
 // CAROUSEL DATA
 
-interface DataType {
-  time: string;
-  heading: string;
-  heading2: string;
-  date: string;
-  imgSrc: string;
-  name: string;
-}
+// interface DataType {
+//   time: string;
+//   heading: string;
+//   heading2: string;
+//   date: string;
+//   imgSrc: string;
+//   name: string;
+// }
 
-const postData: DataType[] = [
-  {
-    time: "5 min",
-    heading: "We Launch Delia",
-    heading2: "Webflow this Week!",
-    name: "Published on Startupon",
-    date: "August 19, 2021",
-    imgSrc: "/images/articles/article.png",
-  },
-  {
-    time: "5 min",
-    heading: "We Launch Delia",
-    heading2: "Webflow this Week!",
-    name: "Published on Startupon",
-    date: "August 19, 2021",
-    imgSrc: "/images/articles/article2.png",
-  },
-  {
-    time: "5 min",
-    heading: "We Launch Delia",
-    heading2: "Webflow this Week!",
-    name: "Published on Startupon",
-    date: "August 19, 2021",
-    imgSrc: "/images/articles/article3.png",
-  },
-  {
-    time: "5 min",
-    heading: "We Launch Delia",
-    heading2: "Webflow this Week!",
-    name: "Published on Startupon",
-    date: "August 19, 2021",
-    imgSrc: "/images/articles/article.png",
-  },
-  {
-    time: "5 min",
-    heading: "We Launch Delia",
-    heading2: "Webflow this Week!",
-    name: "Published on Startupon",
-    date: "August 19, 2021",
-    imgSrc: "/images/articles/article2.png",
-  },
-  {
-    time: "5 min",
-    heading: "We Launch Delia",
-    heading2: "Webflow this Week!",
-    name: "Published on Startupon",
-    date: "August 19, 2021",
-    imgSrc: "/images/articles/article3.png",
-  },
-];
+// const postData: DataType[] = [
+//   {
+//     time: "5 min",
+//     heading: "We Launch Delia",
+//     heading2: "Webflow this Week!",
+//     name: "Published on Startupon",
+//     date: "August 19, 2021",
+//     imgSrc: "/images/articles/article.png",
+//   },
+//   {
+//     time: "5 min",
+//     heading: "We Launch Delia",
+//     heading2: "Webflow this Week!",
+//     name: "Published on Startupon",
+//     date: "August 19, 2021",
+//     imgSrc: "/images/articles/article2.png",
+//   },
+//   {
+//     time: "5 min",
+//     heading: "We Launch Delia",
+//     heading2: "Webflow this Week!",
+//     name: "Published on Startupon",
+//     date: "August 19, 2021",
+//     imgSrc: "/images/articles/article3.png",
+//   },
+//   {
+//     time: "5 min",
+//     heading: "We Launch Delia",
+//     heading2: "Webflow this Week!",
+//     name: "Published on Startupon",
+//     date: "August 19, 2021",
+//     imgSrc: "/images/articles/article.png",
+//   },
+//   {
+//     time: "5 min",
+//     heading: "We Launch Delia",
+//     heading2: "Webflow this Week!",
+//     name: "Published on Startupon",
+//     date: "August 19, 2021",
+//     imgSrc: "/images/articles/article2.png",
+//   },
+//   {
+//     time: "5 min",
+//     heading: "We Launch Delia",
+//     heading2: "Webflow this Week!",
+//     name: "Published on Startupon",
+//     date: "August 19, 2021",
+//     imgSrc: "/images/articles/article3.png",
+//   },
+// ];
 
 // CAROUSEL SETTINGS
 
