@@ -1,7 +1,5 @@
 "use client";
-
-import SwiperTest from "../Carousel/Carousel";
-import { WeworkSlider } from "./Weworkslider";
+import Weworkslider from "./Weworkslider";
 
 export const Teachers = () => {
   return (
@@ -19,7 +17,7 @@ export const Teachers = () => {
           </h3>
         </div>
       </div>
-      <SwiperTest />
+      <Weworkslider />
     </div>
   );
 };

@@ -371,7 +371,7 @@ html {
   opacity: 0;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  border-radius: 20px;
+  border-radius: 16px;
 }
 
 .imageContainer:hover:after {

@@ -7,104 +7,204 @@ import youtube from "@/public/images/footer/youtube.svg";
 import Malika from "@/public/images/insta/malika.webp";
 import Iroda from "@/public/images/insta/iroda.webp";
 import Sumbula from "@/public/images/insta/sunbula.webp";
+import SwiperTeam from "../Carousel/Carousel";
+import { SwiperSlide } from "swiper/react";
 const Insta = () => {
   const [showone, setShowone] = useState(false);
   const [showtwo, setShowtwo] = useState(false);
   const [showtree, setShowtree] = useState(false);
   const [showfour, setShowfour] = useState(false);
   return (
-    <div
-      id="result"
-      className="mx-auto max-w-2xl  pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8 overflow-hidden"
-    >
-      <div className=" mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-        <div className="mx-auto imageContainer">
-          <Image
-            src={Zamira}
-            width={306}
-            height={306}
-            alt="instaOne"
-            className="rounded-2xl"
-          />
-          <div>
-            <button
-              className="hidden text-white font-semibold absolute z-10"
-              style={{
-                top: "45%",
-                right: "45%",
-              }}
-              onClick={() => setShowone(true)}
-            >
-              <Image src={youtube} alt="instagram" width={36} height={36} />
-            </button>
+    <>
+      <div
+        id="result"
+        className="max-lg:hidden mx-auto max-w-2xl  pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8 overflow-hidden"
+      >
+        <div className="mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+          <div className="mx-auto imageContainer">
+            <Image
+              src={Zamira}
+              width={306}
+              height={306}
+              alt="instaOne"
+              className="rounded-2xl"
+            />
+            <div>
+              <button
+                className="hidden text-white font-semibold absolute z-10"
+                style={{
+                  top: "45%",
+                  right: "45%",
+                }}
+                onClick={() => setShowone(true)}
+              >
+                <Image src={youtube} alt="instagram" width={36} height={36} />
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div className="mx-auto imageContainer">
-          <Image
-            src={Malika}
-            width={306}
-            height={306}
-            alt="instaTwo"
-            className="rounded-2xl"
-          />
-          <div>
-            <button
-              className="hidden text-white font-semibold absolute z-10"
-              style={{
-                top: "45%",
-                right: "45%",
-              }}
-              onClick={() => setShowtwo(true)}
-            >
-              <Image src={youtube} alt="instagram" width={36} height={36} />
-            </button>
+          <div className="mx-auto imageContainer">
+            <Image
+              src={Malika}
+              width={306}
+              height={306}
+              alt="instaTwo"
+              className="rounded-2xl"
+            />
+            <div>
+              <button
+                className="hidden text-white font-semibold absolute z-10"
+                style={{
+                  top: "45%",
+                  right: "45%",
+                }}
+                onClick={() => setShowtwo(true)}
+              >
+                <Image src={youtube} alt="instagram" width={36} height={36} />
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div className="mx-auto imageContainer">
-          <Image
-            src={Iroda}
-            width={306}
-            height={306}
-            alt="instaThree"
-            className="rounded-2xl"
-          />
-          <div>
-            <button
-              className="hidden text-white font-semibold absolute z-10"
-              style={{
-                top: "45%",
-                right: "45%",
-              }}
-              onClick={() => setShowtree(true)}
-            >
-              <Image src={youtube} alt="instagram" width={36} height={36} />
-            </button>
+          <div className="mx-auto imageContainer">
+            <Image
+              src={Iroda}
+              width={306}
+              height={306}
+              alt="instaThree"
+              className="rounded-2xl"
+            />
+            <div>
+              <button
+                className="hidden text-white font-semibold absolute z-10"
+                style={{
+                  top: "45%",
+                  right: "45%",
+                }}
+                onClick={() => setShowtree(true)}
+              >
+                <Image src={youtube} alt="instagram" width={36} height={36} />
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div className="mx-auto imageContainer">
-          <Image
-            src={Sumbula}
-            width={306}
-            height={306}
-            alt="instaFour"
-            className="rounded-2xl"
-          />
-          <div>
-            <button
-              className="hidden text-white font-semibold absolute z-10"
-              style={{
-                top: "45%",
-                right: "45%",
-              }}
-              onClick={() => setShowfour(true)}
-            >
-              <Image src={youtube} alt="instagram" width={36} height={36} />
-            </button>
+          <div className="mx-auto imageContainer">
+            <Image
+              src={Sumbula}
+              width={306}
+              height={306}
+              alt="instaFour"
+              className="rounded-2xl"
+            />
+            <div>
+              <button
+                className="hidden text-white font-semibold absolute z-10"
+                style={{
+                  top: "45%",
+                  right: "45%",
+                }}
+                onClick={() => setShowfour(true)}
+              >
+                <Image src={youtube} alt="instagram" width={36} height={36} />
+              </button>
+            </div>
           </div>
         </div>
+      </div>
+      <div className="hidden max-lg:block">
+        <SwiperTeam>
+          <SwiperSlide>
+            <div className="mx-auto imageContainer">
+              <Image
+                src={Zamira}
+                width={306}
+                height={306}
+                alt="instaOne"
+                className="rounded-2xl"
+              />
+              <div>
+                <button
+                  className="hidden text-white font-semibold absolute z-10"
+                  style={{
+                    top: "45%",
+                    right: "45%",
+                  }}
+                  onClick={() => setShowone(true)}
+                >
+                  <Image src={youtube} alt="instagram" width={36} height={36} />
+                </button>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="mx-auto imageContainer">
+              <Image
+                src={Malika}
+                width={306}
+                height={306}
+                alt="instaTwo"
+                className="rounded-2xl"
+              />
+              <div>
+                <button
+                  className="hidden text-white font-semibold absolute z-10"
+                  style={{
+                    top: "45%",
+                    right: "45%",
+                  }}
+                  onClick={() => setShowtwo(true)}
+                >
+                  <Image src={youtube} alt="instagram" width={36} height={36} />
+                </button>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="mx-auto imageContainer">
+              <Image
+                src={Iroda}
+                width={306}
+                height={306}
+                alt="instaThree"
+                className="rounded-2xl"
+              />
+              <div>
+                <button
+                  className="hidden text-white font-semibold absolute z-10"
+                  style={{
+                    top: "45%",
+                    right: "45%",
+                  }}
+                  onClick={() => setShowtree(true)}
+                >
+                  <Image src={youtube} alt="instagram" width={36} height={36} />
+                </button>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="mx-auto imageContainer">
+              <Image
+                src={Sumbula}
+                width={306}
+                height={306}
+                alt="instaFour"
+                className="rounded-2xl"
+              />
+              <div>
+                <button
+                  className="hidden text-white font-semibold absolute z-10"
+                  style={{
+                    top: "45%",
+                    right: "45%",
+                  }}
+                  onClick={() => setShowfour(true)}
+                >
+                  <Image src={youtube} alt="instagram" width={36} height={36} />
+                </button>
+              </div>
+            </div>
+          </SwiperSlide>
+        </SwiperTeam>
       </div>
       <VideoModal
         video={"https://youtube.com/embed/8hgvsfU7tsc?rel=1&showinfo=0"}
@@ -126,7 +226,7 @@ const Insta = () => {
         isVisible={showfour}
         onClose={() => setShowfour(false)}
       />
-    </div>
+    </>
   );
 };
 
