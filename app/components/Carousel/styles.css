@@ -8,43 +8,17 @@
   background-position: center;
   background-size: cover;
   width: 300px;
-  height: 300px;
+  height: 500px;
+  filter: blur(3px);
 }
-
-.swiper-slide Image {
+.swiper-slide-active {
+  filter: blur(0px);
+}
+.swiper-slide > image {
   display: block;
   width: 100%;
 }
 .swiper-3d .swiper-slide-shadow-left,
 .swiper-3d .swiper-slide-shadow-right {
   background-image: none;
-}
-.wr {
-  height: 230px;
-  overflow: hidden;
-  width: 95%;
-  margin: 0 auto;
-  transform: translateY(-20%);
-  border-radius: 50% 0 50% 50%;
-}
-
-@media (min-width: 1200px) {
-  .wr {
-    height: 230px;
-    width: 230px;
-  }
-}
-
-@media (max-width: 800px) {
-  .wr {
-    height: 230px;
-    width: 230px;
-  }
-}
-
-@media (max-width: 400px) {
-  .wr {
-    height: 250px;
-    width: 250px;
-  }
 }

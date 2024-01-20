@@ -10,7 +10,7 @@ const index = () => {
         O`zbekistonda yoshlarni ish bilan ta`minlash va 100 foiz grant asosida
         dasturchilarni tayyorlash bo`yicha birinchi dasturlash maktabi.
       </h3>
-      <div className="grid grid-cols-1 my-16">
+      <div className="grid grid-cols-1 my-16 overflow-hidden shadow-2xl rounded-3xl">
         <Image
           src={officeImage}
           alt="office-image"

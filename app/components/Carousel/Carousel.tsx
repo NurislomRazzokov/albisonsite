@@ -13,44 +13,51 @@ import Zokir from "@/public/images/wework/zokir.webp";
 import Kamron from "@/public/images/wework/kamron.webp";
 import Dilshod from "@/public/images/wework/dilshod.webp";
 import Shuhrat from "@/public/images/wework/shuhrat.webp";
+import logLin from "@/public/images/wework/linkedin.svg";
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 import Image from "next/image";
 import Link from "next/link";
 const data = [
   {
     profession: "CEO",
-    name: "Furqat  Teshaev",
+    name: "Furqat",
+    surname: "Teshaev",
     imgSrc: Furqat,
     in: "https://www.linkedin.com/in/furkat-teshaev-b16701199/",
   },
   {
     profession: "#developer",
-    name: "Kamron Shodmonov",
+    name: "Kamron",
+    surname: "Shodmonov",
     imgSrc: Kamron,
     in: "https://www.linkedin.com/in/kamronbekshodmonov/",
   },
   {
     profession: "#developer",
-    name: "Ibrohim Fattohov",
+    name: "Ibrohim",
+    surname: "Fattohov",
     imgSrc: Ibrohim,
     in: "https://www.linkedin.com/in/ibrohim-fattohov/",
   },
   {
     profession: "#developer",
-    name: "Shuhrat Ergashev",
+    name: "Shuhrat",
+    surname: "Ergashev",
     imgSrc: Shuhrat,
     in: "https://www.linkedin.com/in/shuhrat-ergashev-aa1771238/",
   },
   {
     profession: "#developer",
-    name: "Dilshodbek Khodjakov",
+    name: "Dilshodbek",
+    surname: "Khodjakov",
     imgSrc: Dilshod,
     in: "https://www.linkedin.com/in/dilshodbek-khodjakov/",
   },
   {
     profession: "#developer",
-    name: "Zokirjon  Murotov",
+    name: "Zokirjon",
+    surname: "Murotov",
     imgSrc: Zokir,
     in: "https://www.linkedin.com/in/zokirjon-murotov-2a5200239/",
   },
@@ -66,19 +73,23 @@ export default function SwiperTest() {
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 100,
-          modifier: 4,
+          depth: 90,
+          modifier: 1,
           slideShadows: true,
         }}
         loop={true}
-        modules={[EffectCoverflow, Pagination]}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+        }}
+        modules={[EffectCoverflow, Pagination, Autoplay]}
         className="mySwiper"
       >
         {data?.map((items: any, i: any) => (
           <SwiperSlide key={i}>
-            <div className="bg-white m-3 py-14 my-10 text-center shadow-xl rounded-3xl overflow-hidden">
-              <div className="relative">
-                <div className="wr">
+            <div className="flex flex-col bg-white m-3 py-14 my-10 text-center shadow-xl rounded-3xl overflow-hidden h-full ">
+              <div className="flex flex-col">
+                <div className="h-[230px] overflow-hidden w-4/5 rounded-[50%_0_50%_50%] m-auto">
                   <Image
                     src={items.imgSrc}
                     alt="gaby"
@@ -103,11 +114,9 @@ export default function SwiperTest() {
                 </div>
                 <Link href={items.in} target="_blank">
                   <Image
-                    src={"/images/wework/linkedin.svg"}
+                    src={logLin}
                     alt="greenbg"
-                    width={20}
-                    height={20}
-                    className="absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-10 hover:translate-y-8 transition"
+                    className="w-28 h-28 absolute left-1/2 -translate-x-1/2 top-1/2 translate-y-10 hover:translate-y-8 transition"
                   />
                 </Link>
               </div>
