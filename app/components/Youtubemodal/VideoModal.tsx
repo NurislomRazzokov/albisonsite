@@ -2,27 +2,11 @@
 "use client";
 import { useEffect, useRef } from "react";
 
-export default function VideoModal({
-  isVisible,
-  onClose,
-  video,
-  autoplay,
-}: any) {
+export default function VideoModal({ isVisible, onClose, video }: any) {
   const handleClose = (e: any) => {
     if (e.target.id === "wrapper") onClose();
   };
   if (!isVisible) return null;
-  const iframeRef = useRef<HTMLIFrameElement>(null);
-
-  useEffect(() => {
-    if (iframeRef.current && autoplay) {
-      // Autoplay the video
-      iframeRef.current.contentWindow?.postMessage(
-        '{"event":"command","func":"playVideo","args":""}',
-        "*"
-      );
-    }
-  }, [autoplay]);
 
   return (
     <div

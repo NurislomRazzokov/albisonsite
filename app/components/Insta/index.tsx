@@ -18,7 +18,7 @@ const Insta = () => {
     <>
       <div
         id="result"
-        className="max-lg:hidden mx-auto max-w-2xl  pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8 overflow-hidden"
+        className="max-sm:hidden mx-auto max-w-2xl  pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8 overflow-hidden"
       >
         <div className="mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           <div className="mx-auto imageContainer">
@@ -110,7 +110,7 @@ const Insta = () => {
           </div>
         </div>
       </div>
-      <div className="hidden max-lg:block">
+      <div className="hidden max-sm:block">
         <SwiperTeam>
           <SwiperSlide>
             <div className="mx-auto imageContainer">
@@ -207,7 +207,7 @@ const Insta = () => {
         </SwiperTeam>
       </div>
       <VideoModal
-        video={"https://youtube.com/embed/8hgvsfU7tsc?rel=1&showinfo=0"}
+        video={"https://youtube.com/embed/8hgvsfU7tsc?rel=0&showinfo=0"}
         isVisible={showone}
         onClose={() => setShowone(false)}
       />
