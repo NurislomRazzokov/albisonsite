@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import { getLocalStorage, setLocalStorage } from "@/app/lib/storageHelper";
 import { useState, useEffect } from "react";
@@ -20,9 +19,6 @@ export default function CookieBanner() {
     });
 
     setLocalStorage("cookie_consent", cookieConsent);
-
-    //For Testing
-    console.log("Cookie Consent: ", cookieConsent);
   }, [cookieConsent]);
   return (
     <div

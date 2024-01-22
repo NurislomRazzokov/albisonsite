@@ -1,11 +1,11 @@
 "use client";
 import { Disclosure } from "@headlessui/react";
 import Link from "next/link";
-import React from "react";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import Contactusform from "./Contactus";
+import { useState } from "react";
 
 interface NavigationItem {
   name: string;
@@ -26,7 +26,7 @@ function classNames(...classes: string[]) {
 }
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <Disclosure as="nav" className="navbar">

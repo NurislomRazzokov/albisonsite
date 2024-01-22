@@ -2,41 +2,41 @@
 import { useState } from "react";
 
 const Contactusform = () => {
-  // let [isOpen, setIsOpen] = useState(false);
+  let [isOpen, setIsOpen] = useState(false);
 
-  // const [inputValues, setInputValues] = useState({
-  //   input1: "",
-  //   input2: "",
-  //   input3: "",
-  // });
+  const [inputValues, setInputValues] = useState({
+    input1: "",
+    input2: "",
+    input3: "",
+  });
 
-  // const handleChange = (e: { target: { name: string; value: string } }) => {
-  //   const { name, value } = e.target;
-  //   setInputValues((prevState) => ({ ...prevState, [name]: value }));
-  // };
+  const handleChange = (e: { target: { name: string; value: string } }) => {
+    const { name, value } = e.target;
+    setInputValues((prevState) => ({ ...prevState, [name]: value }));
+  };
 
-  // const handleClick = () => {
-  //   alert(
-  //     `Name: ${inputValues.input1}, Email-address: ${inputValues.input2}, Message: ${inputValues.input3}`
-  //   );
-  //   setIsOpen(false);
-  // };
+  const handleClick = () => {
+    alert(
+      `Name: ${inputValues.input1}, Email-address: ${inputValues.input2}, Message: ${inputValues.input3}`
+    );
+    setIsOpen(false);
+  };
 
-  // // FORM SUBMIT
-  // const handleSubmit = (event: { preventDefault: () => void }) => {
-  //   event.preventDefault();
-  //   // handle form submission
-  // };
+  // FORM SUBMIT
+  const handleSubmit = (event: { preventDefault: () => void }) => {
+    event.preventDefault();
+    // handle form submission
+  };
 
-  // const isDisabled = Object.values(inputValues).some((value) => value === "");
+  const isDisabled = Object.values(inputValues).some((value) => value === "");
 
-  // const closeModal = () => {
-  //   setIsOpen(false);
-  // };
+  const closeModal = () => {
+    setIsOpen(false);
+  };
 
-  // const openModal = () => {
-  //   setIsOpen(true);
-  // };
+  const openModal = () => {
+    setIsOpen(true);
+  };
 
   return (
     <>
