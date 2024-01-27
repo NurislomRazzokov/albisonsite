@@ -1,7 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 "use client";
-import { useEffect, useRef } from "react";
-
 export default function VideoModal({ isVisible, onClose, video }: any) {
   const handleClose = (e: any) => {
     if (e.target.id === "wrapper") onClose();
