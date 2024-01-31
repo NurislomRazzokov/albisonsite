@@ -1,7 +1,6 @@
 import "./globals.css"
 import Navbar from "./components/Navbar/index"
 import Footer from "./components/Footer/index"
-import Head from "next/head"
 import type { Metadata } from "next"
 import GoogleAnalytics from "@/app/components/GoogleAnalytics"
 import CookieBanner from "@/app/components/CookieBanner"
@@ -22,8 +21,8 @@ export default function RootLayout({
 	return (
 		<>
 			<html>
-				<GoogleAnalytics GA_MEASUREMENT_ID="G-93WN9M8Y8G" />
-				<Head>
+				<head>
+					<GoogleAnalytics GA_MEASUREMENT_ID="G-93WN9M8Y8G" />
 					<link rel="icon" href="/logo.svg" />
 					{/* Google Analytics tracking code */}
 					{/* <script
@@ -42,7 +41,7 @@ export default function RootLayout({
             `,
             }}
           ></script> */}
-				</Head>
+				</head>
 				<body>
 					<Navbar />
 					{children}
