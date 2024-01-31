@@ -20,12 +20,12 @@ export default function GoogleAnalytics({
 	return (
 		<>
 			<Script
-				async={true}
+				async
 				strategy="afterInteractive"
 				src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
 			/>
 			<Script
-				async={true}
+				async
 				id="google-analytics"
 				strategy="afterInteractive"
 				dangerouslySetInnerHTML={{
