@@ -1,32 +1,32 @@
-import "./globals.css";
-import Navbar from "./components/Navbar/index";
-import Footer from "./components/Footer/index";
-import Head from "next/head";
-import type { Metadata } from "next";
-import GoogleAnalytics from "@/app/components/GoogleAnalytics";
-import CookieBanner from "@/app/components/CookieBanner";
+import "./globals.css"
+import Navbar from "./components/Navbar/index"
+import Footer from "./components/Footer/index"
+import Head from "next/head"
+import type { Metadata } from "next"
+import GoogleAnalytics from "@/app/components/GoogleAnalytics"
+import CookieBanner from "@/app/components/CookieBanner"
 export const metadata: Metadata = {
-  title: "Albison Academy",
-  icons: {
-    icon: "/logo.svg",
-  },
-  description:
-    "Toshkentda professional IT treyning markazi | Albison - 2020 yildan beri o'z faoliyatini yurg'izib kelmoqda. IT Kurslar boshidan boshlab o'rgatiladi va ishga kirguncha qo’llab-quvvatlanadi. Online o'qish imkoniyati ham bor. Bepul ochiq darslar",
-};
+	title: "Albison Academy",
+	icons: {
+		icon: "/logo.svg",
+	},
+	description:
+		"Toshkentda professional IT treyning markazi | Albison - 2020 yildan beri o'z faoliyatini yurg'izib kelmoqda. IT Kurslar boshidan boshlab o'rgatiladi va ishga kirguncha qo’llab-quvvatlanadi. Online o'qish imkoniyati ham bor. Bepul ochiq darslar",
+}
 
 export default function RootLayout({
-  children,
+	children,
 }: {
-  children: React.ReactNode;
+	children: React.ReactNode
 }) {
-  return (
-    <>
-      <html>
-        <GoogleAnalytics GA_MEASUREMENT_ID="G-93WN9M8Y8G" />
-        <Head>
-          <link rel="icon" href="/logo.svg" />
-          {/* Google Analytics tracking code */}
-          {/* <script
+	return (
+		<>
+			<html>
+				<GoogleAnalytics GA_MEASUREMENT_ID="G-93WN9M8Y8G" />
+				<Head>
+					<link rel="icon" href="/logo.svg" />
+					{/* Google Analytics tracking code */}
+					{/* <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-93WN9M8Y8G"
           ></script>
@@ -42,16 +42,16 @@ export default function RootLayout({
             `,
             }}
           ></script> */}
-        </Head>
-        <body>
-          <Navbar />
-          {children}
-          <Footer />
-          <CookieBanner />
-        </body>
-      </html>
-    </>
-  );
+				</Head>
+				<body>
+					<Navbar />
+					{children}
+					<Footer />
+					<CookieBanner />
+				</body>
+			</html>
+		</>
+	)
 }
 
 // <!-- Google tag (gtag.js) -->
