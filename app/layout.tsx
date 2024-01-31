@@ -1,9 +1,9 @@
 import "./globals.css"
-import Navbar from "./components/Navbar/index"
 import Footer from "./components/Footer/index"
 import type { Metadata } from "next"
 import CookieBanner from "@/app/components/CookieBanner"
 import GoogleAnalytics from "./components/GoogleAnalytics"
+import Navbarin from "./components/Navbar/index"
 export const metadata: Metadata = {
 	title: "Albison Academy",
 	icons: {
@@ -26,7 +26,7 @@ export default function RootLayout({
 					<link rel="icon" href="/logo.svg" />
 				</head>
 				<body>
-					<Navbar />
+					<Navbarin />
 					{children}
 					<Footer />
 					<CookieBanner />
