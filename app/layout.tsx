@@ -1,9 +1,9 @@
-import "./globals.css"
-import Footer from "./components/Footer/index"
-import type { Metadata } from "next"
-import CookieBanner from "@/app/components/CookieBanner"
-import GoogleAnalytics from "./components/GoogleAnalytics"
-import Navbarin from "./components/Navbar/index"
+import "./globals.css";
+import Footer from "./components/Footer/index";
+import type { Metadata } from "next";
+import CookieBanner from "@/app/components/CookieBanner";
+// import GoogleAnalytics from "./components/GoogleAnalytics";
+import Navbarin from "./components/Navbar/index";
 export const metadata: Metadata = {
 	title: "Albison Academy",
 	icons: {
@@ -11,18 +11,32 @@ export const metadata: Metadata = {
 	},
 	description:
 		"Toshkentda professional IT treyning markazi | Albison - 2020 yildan beri o'z faoliyatini yurg'izib kelmoqda. IT Kurslar boshidan boshlab o'rgatiladi va ishga kirguncha qo’llab-quvvatlanadi. Online o'qish imkoniyati ham bor. Bepul ochiq darslar",
-}
+};
 
 export default function RootLayout({
 	children,
 }: {
-	children: React.ReactNode
+	children: React.ReactNode;
 }) {
 	return (
 		<>
 			<html>
 				<head>
-					<GoogleAnalytics GA_MEASUREMENT_ID="G-93WN9M8Y8G" />
+					<script
+						async
+						src="https://www.googletagmanager.com/gtag/js?id=G-93WN9M8Y8G"
+					/>
+					<script
+						dangerouslySetInnerHTML={{
+							__html: `window.dataLayer = window.dataLayer || [];
+						function gtag(){dataLayer.push(arguments);}
+						gtag('js', new Date());
+					  
+						gtag('config', 'G-93WN9M8Y8G');`,
+						}}
+					/>
+
+					{/* <GoogleAnalytics GA_MEASUREMENT_ID="G-93WN9M8Y8G" /> */}
 					<link rel="icon" href="/logo.svg" />
 				</head>
 				<body>
@@ -33,5 +47,5 @@ export default function RootLayout({
 				</body>
 			</html>
 		</>
-	)
+	);
 }
