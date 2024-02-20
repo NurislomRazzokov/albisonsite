@@ -43,7 +43,6 @@ export default function RootLayout({
 					<Navbarin />
 					{children}
 					<Footer />
-					<CookieBanner />
 				</body>
 			</html>
 		</>
